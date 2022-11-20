@@ -1,0 +1,17 @@
+{
+  "contract": {
+    "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+    "signerAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "abi": [
+      "event MemberJoined(address indexed member, uint256 joinedAt)",
+      "event VoteCreated(address indexed owner, uint256 indexed voteId, uint256 indexed createdAt, uint256 endTime)",
+      "event Voted(address indexed voter, uint256 indexed voteId, uint256 indexed option, uint256 createdAt)",
+      "function createVote(string uri, uint256 endTime, uint256 options)",
+      "function didVote(address member, uint256 voteId) view returns (bool)",
+      "function getVote(uint256 voteId) view returns (string, address, uint256[], uint256)",
+      "function join()",
+      "function members(address) view returns (bool)",
+      "function vote(uint256 voteId, uint256 option)"
+    ]
+  }
+}
